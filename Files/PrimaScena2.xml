@@ -1,0 +1,14 @@
+<Livello1>
+	<Dialogo id = "1">
+		<linea id="1" charachter = "Skall" mood = "Happy" type = "" >Ciao sono Skall felice</linea>
+		<linea id="2" charachter = "Skall" mood = "Sad" type = "" >Sono Skall triste</linea>
+		<linea id="3" charachter = "Ana" mood = "Happy" type = "" >Ciao sono Ana felice</linea>
+		<linea id="4" charachter = "Ana" mood = "Sad" type = "End">Ciao sono Ana triste</linea>
+	</Dialogo>
+	
+	<Dialogo id = "2">
+		<linea id="1" charachter = "Ana" mood = "Happy" pos = "left">Ciao</linea>
+		<linea id ="2" charachter = "Ana" mood = "Sad" pos = "right">Sono Ana</linea>
+	</Dialogo>
+	
+</Livello1>

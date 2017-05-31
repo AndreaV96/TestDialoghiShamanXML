@@ -23,7 +23,7 @@
                     <param id="0" name="Object">UnderText</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
-                <action id="-4" name="Set position to another object" sid="133342340222428" type="SpriteFont">
+                <action id="-4" name="Set position to another object" sid="133342340222428" type="SpriteFontAna">
                     <param id="0" name="Object">UnderText</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
@@ -122,13 +122,13 @@
                             <param id="0" name="Animation">AnimName</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action disabled="1" id="0" name="Set text" sid="649959754445382" type="Text">
+                        <action id="0" name="Set text" sid="649959754445382" type="Text">
+                            <param id="0" name="Text">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp; CurrDialog &amp; &quot;]/linea[@id = &quot;&amp; CurrLine &amp; &quot;]/@charachter&quot;)</param>
+                        </action>
+                        <action disabled="1" id="0" name="Set text" sid="854634060612781" type="SpriteFontAna">
                             <param id="0" name="Text">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp; CurrDialog &amp; &quot;]/linea[@id = &quot;&amp; CurrLine &amp; &quot;]/text()&quot;)</param>
                         </action>
-                        <action id="0" name="Set text" sid="854634060612781" type="SpriteFont">
-                            <param id="0" name="Text">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp; CurrDialog &amp; &quot;]/linea[@id = &quot;&amp; CurrLine &amp; &quot;]/text()&quot;)</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="223418123881779" type="System">
+                        <action disabled="1" id="-10" name="Add to" sid="223418123881779" type="System">
                             <param id="0" name="Variable">CurrLine</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -147,8 +147,15 @@
                             <param id="0" name="X">UnderText.ImagePointX(1) </param>
                             <param id="1" name="Y">UnderText.ImagePointY(1)</param>
                         </action>
-                        <action id="7" name="Set horizontal alignment" sid="761998361098503" type="SpriteFont">
+                        <action id="0" name="Set text" sid="826699655213314" type="SpriteFontAna">
+                            <param id="0" name="Text">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp; CurrDialog &amp; &quot;]/linea[@id = &quot;&amp; CurrLine &amp; &quot;]/text()&quot;)</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="761998361098503" type="SpriteFontAna">
                             <param id="0" name="Horizontal alignment">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="347685291390016" type="System">
+                            <param id="0" name="Variable">CurrLine</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -165,14 +172,21 @@
                             <param id="0" name="X">UnderText.ImagePointX(2)</param>
                             <param id="1" name="Y">UnderText.ImagePointY(2)</param>
                         </action>
-                        <action id="7" name="Set horizontal alignment" sid="914392980987104" type="SpriteFont">
-                            <param id="0" name="Horizontal alignment">0</param>
+                        <action id="0" name="Set text" sid="351773844984931" type="SpriteFontSkall">
+                            <param id="0" name="Text">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp; CurrDialog &amp; &quot;]/linea[@id = &quot;&amp; CurrLine &amp; &quot;]/text()&quot;)</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="914392980987104" type="SpriteFontAna">
+                            <param id="0" name="Horizontal alignment">2</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="504843579512274" type="System">
+                            <param id="0" name="Variable">CurrLine</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="785925506723900">
+        <event-block disabled="1" sid="785925506723900">
             <conditions>
                 <condition id="0" name="On function" sid="454673638708143" type="Function">
                     <param id="0" name="Name">&quot;SetNextDialog&quot;</param>
@@ -190,6 +204,12 @@
                 <action id="-9" name="Set value" sid="207667187758856" type="System">
                     <param id="0" name="Variable">LineType</param>
                     <param id="1" name="Value">XML.StringValue(&quot;/Livello1/Dialogo[@id = &quot;&amp;CurrDialog &amp;&quot;]/linea[@id = &quot;&amp;CurrLine&amp;&quot;]/@type&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="584110770315134" type="SpriteFontAna">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="970475832029699" type="SpriteFontSkall">
+                    <param id="0" name="Text">&quot;&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="198354599790746" type="Function">
                     <param id="0" name="Name">&quot;SetNextLine&quot;</param>

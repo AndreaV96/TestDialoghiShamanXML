@@ -718,11 +718,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1107</x>
-                        <y>80</y>
+                        <x>988</x>
+                        <y>48</y>
                         <z>0</z>
-                        <width>458</width>
-                        <height>149</height>
+                        <width>640</width>
+                        <height>484</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -748,8 +748,8 @@
                         <x>218</x>
                         <y>76</y>
                         <z>0</z>
-                        <width>538</width>
-                        <height>168</height>
+                        <width>604</width>
+                        <height>413</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -767,11 +767,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>437</x>
-                        <y>615</y>
+                        <x>541.5</x>
+                        <y>624</y>
                         <z>0</z>
-                        <width>462</width>
-                        <height>164</height>
+                        <width>671</width>
+                        <height>182</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -779,7 +779,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SpriteFont" uid="31">
+                <instance type="SpriteFontAna" uid="31">
                     <properties>
                         <character-width>32</character-width>
                         <character-height>32</character-height>
@@ -797,11 +797,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>437</x>
-                        <y>615</y>
+                        <x>397</x>
+                        <y>547</y>
                         <z>0</z>
-                        <width>462</width>
-                        <height>164</height>
+                        <width>481</width>
+                        <height>153</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -827,6 +827,36 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFontSkall" uid="32">
+                    <properties>
+                        <character-width>32</character-width>
+                        <character-height>32</character-height>
+                        <character-set>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Text</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>213</x>
+                        <y>544</y>
+                        <z>0</z>
+                        <width>457</width>
+                        <height>157</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

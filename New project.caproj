@@ -159,7 +159,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SpriteFont" sid="447923190842869">
+        <object-type name="SpriteFontAna" sid="447923190842869">
             <plugin id="Spritefont2" />
             <texture original-source="C:\Users\dbga_51\Downloads\alfabetario.png" />
         </object-type>
@@ -182,6 +182,14 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="429509755995543">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFontSkall" sid="465510644364117">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariov2.png" />
         </object-type>
     </object-folder>
     <families />

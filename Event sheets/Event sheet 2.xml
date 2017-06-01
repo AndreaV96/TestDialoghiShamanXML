@@ -40,6 +40,9 @@
                 <action id="0" name="Load" sid="979627984899001" type="XML">
                     <param id="0" name="XML">AJAX.LastData</param>
                 </action>
+                <action id="-15" name="Set visible" sid="967784663127465" type="Undertext1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
                 <action id="0" name="Call function" sid="885291373114694" type="Function">
                     <param id="0" name="Name">&quot;SetNextLine1&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -68,6 +71,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Set text" sid="733240856416242" type="AnaFont">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="636527493445382" type="SkullFont">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
                         <action id="0" name="Call function" sid="538605486671013" type="Function">
                             <param id="0" name="Name">&quot;DisplayAnimation1&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -98,17 +107,13 @@
                         <action id="-13" name="Set time scale" sid="472952071380491" type="System">
                             <param id="0" name="Time scale">1.0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="103061492715254" type="Undertext1">
+                        <action id="-9" name="Destroy" sid="103061492715254" type="Undertext1" />
+                        <action id="-9" name="Destroy" sid="624747923111923" type="Portrait2" />
+                        <action id="-15" name="Set visible" sid="225144030475477" type="SkullFont">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="624747923111923" type="Portrait2">
+                        <action id="-15" name="Set visible" sid="311699142686895" type="AnaFont">
                             <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="0" name="Set text" sid="733240856416242" type="AnaFont">
-                            <param id="0" name="Text">&quot;&quot;</param>
-                        </action>
-                        <action id="0" name="Set text" sid="636527493445382" type="SkullFont">
-                            <param id="0" name="Text">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -134,9 +139,6 @@
                             <param id="0" name="Animation">&quot;AnimName1&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="0" name="Set text" sid="635230298834204" type="DebugText">
-                            <param id="0" name="Text">AnimName1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="407456857034379">
@@ -155,15 +157,15 @@
                         <action id="0" name="Set text" sid="628622771549648" type="AnaFont">
                             <param id="0" name="Text">XML.StringValue(&quot;/Intro/Dialogo[@id = &quot;&amp; CurrentDialogue &amp;&quot;]/linea[@id = &quot;&amp; CurrentLine &amp;&quot;]/text()&quot;)</param>
                         </action>
-                        <action id="-10" name="Add to" sid="398403747039802" type="System">
+                        <action disabled="1" id="-10" name="Add to" sid="398403747039802" type="System">
                             <param id="0" name="Variable">CurrentLine</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="304859300405527" type="Undertext1">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="625049473007494" type="AnaFont">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="763270811727583" type="SkullFont">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -183,15 +185,15 @@
                         <action id="0" name="Set text" sid="185697771808094" type="SkullFont">
                             <param id="0" name="Text">XML.StringValue(&quot;/Intro/Dialogo[@id = &quot;&amp; CurrentDialogue &amp;&quot;]/linea[@id = &quot;&amp; CurrentLine &amp;&quot;]/text()&quot;)</param>
                         </action>
-                        <action id="-10" name="Add to" sid="546102838300972" type="System">
+                        <action disabled="1" id="-10" name="Add to" sid="546102838300972" type="System">
                             <param id="0" name="Variable">CurrentLine</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="136300199104144" type="Undertext1">
+                        <action id="-15" name="Set visible" sid="961694323703610" type="SkullFont">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="763270811727583" type="SkullFont">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="-15" name="Set visible" sid="187629816972757" type="AnaFont">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -204,6 +206,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-10" name="Add to" sid="420667782694387" type="System">
+                    <param id="0" name="Variable">CurrentLine</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-9" name="Set value" sid="965114213072612" type="System">
                     <param id="0" name="Variable">LineType1</param>
                     <param id="1" name="Value">XML.StringValue(&quot;/Intro/Dialogo[@id = &quot;&amp;CurrentDialogue &amp;&quot;]/linea[@id = &quot;&amp;CurrentLine&amp;&quot;]/@type&quot;)</param>

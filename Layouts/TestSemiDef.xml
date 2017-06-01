@@ -558,11 +558,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>528</x>
-                        <y>762</y>
+                        <x>547.5</x>
+                        <y>771</y>
                         <z>0</z>
-                        <width>85</width>
-                        <height>142</height>
+                        <width>46</width>
+                        <height>124</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -629,7 +629,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-29,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -640,8 +640,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1137</x>
-                        <y>460</y>
+                        <x>1090</x>
+                        <y>400</y>
                         <z>0</z>
                         <width>451</width>
                         <height>253</height>

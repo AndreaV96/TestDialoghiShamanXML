@@ -56,21 +56,6 @@
         <object-type name="AJAX" sid="299363428535726">
             <plugin id="AJAX" />
         </object-type>
-        <object-type name="Sprite" sid="635312747572377">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808512751773312" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.472" y="0.208" />
-                            <point x="0.772" y="0.456" />
-                            <point x="0.515999" y="0.735999" />
-                            <point x="0.256" y="0.475999" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite2" sid="377289401712167">
             <plugin id="Sprite" />
             <behaviors>
@@ -191,13 +176,154 @@
             <plugin id="Spritefont2" />
             <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariov2.png" />
         </object-type>
+        <object-type name="Background" sid="643921518286198">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665431827792560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Cristina\Documents\Downloads\livello 0.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ana" sid="542621272681763">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsTrigger" sid="158003194445175" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="244884727784061">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="533416083183243">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303595736255414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Cristina\Documents\Downloads\basepixel.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.546875" y="0.453125" />
+                            <point x="0.515625" y="0.5" />
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.5" y="0.546875" />
+                            <point x="0.21875" y="0.78125" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="826568199129329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499359160591957" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="737431907843340">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691898845755199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Cristina\Documents\Downloads\EarthTile.png">
+                        <collision-poly>
+                            <point x="0.0078125" y="0.0625" />
+                            <point x="0.5" y="0.15625" />
+                            <point x="0.625" y="0.5" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.0078125" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="537527452876866">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="871671380529101">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959923923586920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Undertext1" sid="585223975328567">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652337090137510" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.132" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.824" y="0.512" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AnaFont" sid="473628551693665">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="isVisible" sid="800965705097121" type="boolean" />
+            </instance-variables>
+            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+        </object-type>
+        <object-type name="Trigger" sid="183777500791252">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754512214180088" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="626184052533925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918951939242086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SkullFont" sid="618892411975929">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="isVisible" sid="439634301650325" type="boolean" />
+            </instance-variables>
+            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+        </object-type>
+        <object-type name="Portrait2" sid="918489607465369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776820434291811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="SkallHappy" pingpong="0" repeatcount="1" repeatto="0" sid="182069089142723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="SkallSad" pingpong="0" repeatcount="1" repeatto="0" sid="513819524244260" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="AnaHappy" pingpong="0" repeatcount="1" repeatto="0" sid="774563604848698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="AnaSad" pingpong="0" repeatcount="1" repeatto="0" sid="876937453872998" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DebugText" sid="103525509524060">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>TestSemiDef.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="AJAX" uid="1" />
@@ -216,5 +342,6 @@
             <file name="loading-logo.png" />
         </file-folder>
         <file name="PrimaScena2.xml" />
+        <file name="Intro.xml" />
     </files-folder>
 </c2project>

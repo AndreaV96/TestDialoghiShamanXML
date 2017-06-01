@@ -136,7 +136,7 @@
                             <param id="1" name="Value">XML.StringValue(&quot;/Intro/Dialogo[@id=&quot; &amp; CurrentDialogue &amp;&quot;]/linea[@id = &quot;&amp; CurrentLine &amp;&quot;]/@charachter&quot;)  &amp; XML.StringValue(&quot;/Intro/Dialogo[@id=&quot; &amp; CurrentDialogue &amp;&quot;]/linea[@id = &quot;&amp; CurrentLine &amp;&quot;]/@mood&quot;)</param>
                         </action>
                         <action id="4" name="Set animation" sid="879193027506722" type="Portrait2">
-                            <param id="0" name="Animation">&quot;AnimName1&quot;</param>
+                            <param id="0" name="Animation">AnimName1</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>

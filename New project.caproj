@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -256,8 +257,8 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652337090137510" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="0.132" y="0.5" />
-                        <image-point name="Imagepoint 2" x="0.824" y="0.512" />
+                        <image-point name="Imagepoint 1" x="0.08" y="0.504" />
+                        <image-point name="Imagepoint 2" x="0.92" y="0.524" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -314,6 +315,32 @@
         </object-type>
         <object-type name="DebugText" sid="103525509524060">
             <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="Sprite3" sid="183973901971101">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="203174106290387">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386254213847122" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="640743712364511">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+        </object-type>
+        <object-type name="SpriteFont3" sid="493243354752132">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Fade" sid="802492917960347">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
         </object-type>
     </object-folder>
     <families />

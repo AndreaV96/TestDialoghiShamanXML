@@ -482,6 +482,7 @@
                     <param id="0" name="X">Self.X + 100 * dt</param>
                     <param id="1" name="Y">0</param>
                 </action>
+                <action id="2" name="Stop" sid="577790256657867" type="Ana" />
             </actions>
         </event-block>
         <event-block sid="442084343464044">
@@ -499,6 +500,10 @@
                 </action>
                 <action id="-16" name="Wait" sid="263887491668677" type="System">
                     <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="133253950234749" type="Ana">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
                 <action id="-3" name="Set position" sid="567977874244426" type="Ana">
                     <param id="0" name="X">Self.X + 50 * dt</param>

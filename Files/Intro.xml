@@ -1,7 +1,7 @@
 <Intro>
 	<Dialogo id = "1">
 		<linea id="1" charachter = "Ana" mood = "Happy" type = "" >Sara' stato quello shamano da quattro soldi del mio ragazzo!</linea>
-		<linea id="2" charachter = "Ana" mood = "Sad" type = "" >Come si è permesso di rubarle?</linea>
+		<linea id="2" charachter = "Ana" mood = "Sad" type = "" >Come si e' permesso di rubarle?</linea>
 		<linea id="3" charachter = "Ana" mood = "Happy" type = "" >Non sa cosa si deve aspettare adesso, giuro che se le vedo te lo faccio mangiare Skall!</linea>
 		<linea id="4" charachter = "Skall" mood = "Sad" type = "">No Mia Signora, per favore, il mio stomaco e' delicato!</linea>
 		<linea id="5" charachter = "Ana" mood = "Happy" type = "">Non m'importa, lo mangerai lo stesso!</linea>
@@ -31,7 +31,7 @@
 	
 	<Dialogo id = "3">
 		<linea id="1" charachter = "Skall" mood = "Happy" type = "">Mia padrona, guardi a terra, qualcosa sta luccicando...</linea>
-		<linea id ="2" charachter = "Ana" mood = "Sad" type = "" >Quell’idiota non sa nemmeno legare come si deve un cristallo a un costrutto...</linea>
+		<linea id ="2" charachter = "Ana" mood = "Sad" type = "" >Quell'idiota non sa nemmeno legare come si deve un cristallo a un costrutto...</linea>
 		<linea id="3" charachter = "Ana" mood = "Happy" type = "">Non posso credere che sia riuscito a rubarmeli</linea>
 		<linea id="4" charachter = "Skall" mood = "Happy" type = "End"></linea>		
 		

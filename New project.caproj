@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -192,12 +193,10 @@
             <instance-variables>
                 <instance-variable name="IsTrigger" sid="158003194445175" type="boolean" />
                 <instance-variable name="isDialogues" sid="256969502222341" type="boolean" />
+                <instance-variable name="IsWalking" sid="648391829328591" type="boolean" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="BoundToLayout" sid="533416083183243">
-                    <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="854383821723034">
+                <behavior-type name="ScrollTo" sid="777533121068311">
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
@@ -252,8 +251,8 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652337090137510" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="0.08" y="0.504" />
-                        <image-point name="Imagepoint 2" x="0.92" y="0.524" />
+                        <image-point name="Imagepoint 1" x="0.06" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.952" y="0.5" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -263,7 +262,7 @@
             <instance-variables>
                 <instance-variable name="isVisible" sid="800965705097121" type="boolean" />
             </instance-variables>
-            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+            <texture original-source="C:\Users\dbga_51\Downloads\alfabetariobianco.png" />
         </object-type>
         <object-type name="Trigger" sid="183777500791252">
             <plugin id="Sprite" />
@@ -286,7 +285,7 @@
             <instance-variables>
                 <instance-variable name="isVisible" sid="439634301650325" type="boolean" />
             </instance-variables>
-            <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+            <texture original-source="C:\Users\dbga_51\Downloads\alfabetariobianco.png" />
         </object-type>
         <object-type name="Portrait2" sid="918489607465369">
             <plugin id="Sprite" />
@@ -339,39 +338,6 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
-        </object-type>
-        <object-type name="Sprite6" sid="199987174887108">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="ConCristallo" pingpong="0" repeatcount="1" repeatto="0" sid="569234732089418" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra.png">
-                        <collision-poly>
-                            <point x="0.0820313" y="0.328125" />
-                            <point x="0.5" y="0.171875" />
-                            <point x="0.894531" y="0.421875" />
-                            <point x="0.945313" y="0.5" />
-                            <point x="0.96875" y="0.875" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0625" y="0.75" />
-                            <point x="0.0585938" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="SenzaCristallo" pingpong="0" repeatcount="1" repeatto="0" sid="783678868971435" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra.png">
-                        <collision-poly>
-                            <point x="0.0820313" y="0.328125" />
-                            <point x="0.5" y="0.171875" />
-                            <point x="0.894531" y="0.421875" />
-                            <point x="0.945313" y="0.5" />
-                            <point x="0.96875" y="0.875" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0625" y="0.75" />
-                            <point x="0.0585938" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Sprite11" sid="519162243319112">
             <plugin id="Sprite" />
@@ -427,6 +393,134 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614958462503313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="381602576812153">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287772669684431" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\livello 1N.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="751196771299079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="447928055060762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra (1).png">
+                        <collision-poly>
+                            <point x="0.214844" y="0.859375" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.894531" y="0.421875" />
+                            <point x="0.945313" y="0.5" />
+                            <point x="0.96875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.75" />
+                            <point x="0.453125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="801533026499131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234337885961190" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="411237311088346">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634749073669794" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra (1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="556672270245399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590938328386138" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra (1).png">
+                        <collision-poly>
+                            <point x="0.0110677" y="0.265625" />
+                            <point x="0.982422" y="0.421875" />
+                            <point x="0.990885" y="0.5" />
+                            <point x="0.994792" y="0.875" />
+                            <point x="0.0104167" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Golem" sid="108569330224332">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871858812350332" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="GolemSenzaCristallo" pingpong="0" repeatcount="1" repeatto="0" sid="578913039451632" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra solo.png">
+                        <collision-poly>
+                            <point x="0.214844" y="0.859375" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.894531" y="0.421875" />
+                            <point x="0.945313" y="0.5" />
+                            <point x="0.96875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.75" />
+                            <point x="0.453125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="957331136861788">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Camera" sid="896941133159892">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="154246453706180">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995912990661091" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="537419786418658">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="411331194648107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="254382261905858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874762713691009" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="186222549023308">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844712866383235" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>

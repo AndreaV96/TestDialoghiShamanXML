@@ -419,6 +419,9 @@
                 <condition id="-4" name="Trigger once while true" sid="622419366895413" type="System" />
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="761315891151993" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
                 <action id="-9" name="Set value" sid="803582893228840" type="System">
                     <param id="0" name="Variable">CurrentLine</param>
                     <param id="1" name="Value">1</param>
@@ -436,8 +439,14 @@
         <event-block sid="630924709069832">
             <conditions>
                 <condition id="-9" name="Is visible" sid="982005373645952" type="Ana" />
+                <condition id="-8" name="Is boolean instance variable set" sid="794308799388390" type="Ana">
+                    <param id="0" name="Instance variable">IsWalking</param>
+                </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="466257049544625" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
                 <action id="-3" name="Set position" sid="339872110862311" type="Ana">
                     <param id="0" name="X">Self.X + 100 * dt</param>
                     <param id="1" name="Y">Self.Y</param>
@@ -446,8 +455,9 @@
         </event-block>
         <event-block sid="807091253847030">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="846445777029236" type="Ana">
-                    <param id="0" name="Object">TriggerZone</param>
+                <condition id="-1" name="Compare X" sid="846445777029236" type="Ana">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">TriggerZone.X</param>
                 </condition>
                 <condition id="-14" name="Compare variable" sid="382511701293979" type="System">
                     <param id="0" name="Variable">CurrentDialogue</param>
@@ -456,13 +466,21 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-4" name="Set position to another object" sid="108597394092241" type="Ana">
-                    <param id="0" name="Object">TriggerZone</param>
-                    <param id="1" name="Image point (optional)">0</param>
+                <action id="-1" name="Set X" sid="108597394092241" type="Ana">
+                    <param id="0" name="X">TriggerZone.X</param>
                 </action>
-                <action id="4" name="Set animation" sid="334240274586078" type="Sprite6">
-                    <param id="0" name="Animation">&quot;SenzaCristallo&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-2" name="Set Y" sid="331537834661054" type="Ana">
+                    <param id="0" name="Y">TriggerZone.Y</param>
+                </action>
+                <action behavior="ScrollTo" disabled="1" id="1" name="Set enabled" sid="689126221219370" type="Ana">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" disabled="1" id="1" name="Set enabled" sid="177035470962945" type="Camera">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="-3" name="Set position" sid="349550021007901" type="Camera">
+                    <param id="0" name="X">Self.X + 100 * dt</param>
+                    <param id="1" name="Y">0</param>
                 </action>
             </actions>
         </event-block>
@@ -475,9 +493,36 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="4" name="Set animation" sid="911906795040476" type="Golem">
+                    <param id="0" name="Animation">&quot;GolemSenzaCristallo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="263887491668677" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
                 <action id="-3" name="Set position" sid="567977874244426" type="Ana">
-                    <param id="0" name="X">Self.X + 80 * dt</param>
+                    <param id="0" name="X">Self.X + 50 * dt</param>
                     <param id="1" name="Y">Self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744720023271680">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="681939043749872" type="Ana">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">TriggerZone.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="896033789451439" type="Ana">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="594719057896087" type="Camera">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="530064452192520" type="Camera">
+                    <param id="0" name="X">Self.X + 100 * dt</param>
+                    <param id="1" name="Y">0</param>
                 </action>
             </actions>
         </event-block>

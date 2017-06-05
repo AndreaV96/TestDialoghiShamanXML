@@ -433,18 +433,51 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="630924709069832">
+        <event-block sid="630924709069832">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="982005373645952" type="System">
+                <condition id="-9" name="Is visible" sid="982005373645952" type="Ana" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="339872110862311" type="Ana">
+                    <param id="0" name="X">Self.X + 100 * dt</param>
+                    <param id="1" name="Y">Self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807091253847030">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="846445777029236" type="Ana">
+                    <param id="0" name="Object">TriggerZone</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="382511701293979" type="System">
                     <param id="0" name="Variable">CurrentDialogue</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-3" name="Set position" sid="339872110862311" type="Ana">
-                    <param id="0" name="X">(Ana.X + 10) * dt</param>
-                    <param id="1" name="Y">(Ana.Y + 10) * dt</param>
+                <action id="-4" name="Set position to another object" sid="108597394092241" type="Ana">
+                    <param id="0" name="Object">TriggerZone</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="334240274586078" type="Sprite6">
+                    <param id="0" name="Animation">&quot;SenzaCristallo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442084343464044">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="768048059805501" type="System">
+                    <param id="0" name="Variable">CurrentDialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="567977874244426" type="Ana">
+                    <param id="0" name="X">Self.X + 80 * dt</param>
+                    <param id="1" name="Y">Self.Y</param>
                 </action>
             </actions>
         </event-block>

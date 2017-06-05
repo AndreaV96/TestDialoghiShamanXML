@@ -194,9 +194,6 @@
                 <instance-variable name="isDialogues" sid="256969502222341" type="boolean" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Platform" sid="244884727784061">
-                    <behavior id="Platform" />
-                </behavior-type>
                 <behavior-type name="BoundToLayout" sid="533416083183243">
                     <behavior id="bound" />
                 </behavior-type>

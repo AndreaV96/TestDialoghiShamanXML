@@ -30,13 +30,13 @@
 	</Dialogo>
 	
 	<Dialogo id = "3">
-		<linea id="1" charachter = "Skall" mood = "Happy" >Mia padrona, guardi a terra, qualcosa sta luccicando...</linea>
-		<linea id ="2" charachter = "Ana" mood = "Sad" >Quell’idiota non sa nemmeno legare come si deve un cristallo a un costrutto...</linea>
-		<linea id="3" charachter = "Ana" mood = "Happy" type = "End">Non posso credere che sia riuscito a rubarmeli</linea>
-		
+		<linea id="1" charachter = "Skall" mood = "Happy" type = "">Mia padrona, guardi a terra, qualcosa sta luccicando...</linea>
+		<linea id ="2" charachter = "Ana" mood = "Sad" type = "" >Quell’idiota non sa nemmeno legare come si deve un cristallo a un costrutto...</linea>
+		<linea id="3" charachter = "Ana" mood = "Happy" type = "">Non posso credere che sia riuscito a rubarmeli</linea>
+		<linea id="4" charachter = "Skall" mood = "Happy" type = "End"></linea>		
 		
 	</Dialogo>
 		
-
+ 
 
 </Intro>

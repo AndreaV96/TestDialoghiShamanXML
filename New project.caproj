@@ -16,12 +16,14 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -29,8 +31,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1708</width>
-        <height>960</height>
+        <width>640</width>
+        <height>480</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -189,6 +191,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="IsTrigger" sid="158003194445175" type="boolean" />
+                <instance-variable name="isDialogues" sid="256969502222341" type="boolean" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="244884727784061">
@@ -196,6 +199,9 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="533416083183243">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="854383821723034">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -215,14 +221,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite8" sid="826568199129329">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499359160591957" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite9" sid="737431907843340">
             <plugin id="Sprite" />
             <animation-folder>
@@ -239,7 +237,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite10" sid="537527452876866">
+        <object-type name="Pavimento" sid="537527452876866">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="871671380529101">
@@ -316,8 +314,11 @@
         <object-type name="DebugText" sid="103525509524060">
             <plugin id="Text" />
         </object-type>
-        <object-type global="1" name="Sprite3" sid="183973901971101">
+        <object-type global="1" name="FadeEffect" sid="183973901971101">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isFading" sid="511778529740364" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Fade" sid="203174106290387">
                     <behavior id="Fade" />
@@ -341,6 +342,97 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Cristina\Documents\Downloads\alfabetariobianco2.png" />
+        </object-type>
+        <object-type name="Sprite6" sid="199987174887108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ConCristallo" pingpong="0" repeatcount="1" repeatto="0" sid="569234732089418" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra.png">
+                        <collision-poly>
+                            <point x="0.0820313" y="0.328125" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.894531" y="0.421875" />
+                            <point x="0.945313" y="0.5" />
+                            <point x="0.96875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.75" />
+                            <point x="0.0585938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="SenzaCristallo" pingpong="0" repeatcount="1" repeatto="0" sid="783678868971435" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\boss terra.png">
+                        <collision-poly>
+                            <point x="0.0820313" y="0.328125" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.894531" y="0.421875" />
+                            <point x="0.945313" y="0.5" />
+                            <point x="0.96875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.75" />
+                            <point x="0.0585938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="519162243319112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337494117283398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_51\Downloads\tile2.0.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.839844" y="0.679688" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.0078125" y="0.984375" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap" sid="181186496951643">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\dbga_51\Downloads\tile2.0.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Sprite7" sid="955814914363198">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="633110277431239">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889563416281949" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerZone" sid="473076638901768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924516188657994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="789436057521879">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="183088744911163">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614958462503313" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
